@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="833.0" style="-fx-background-color: #e1f0f5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CreateQuizController">
+   <top>
+      <AnchorPane prefHeight="141.0" prefWidth="833.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="quizName" layoutX="263.0" layoutY="71.0" prefHeight="39.0" prefWidth="308.0" />
+            <Label layoutX="359.0" layoutY="35.0" text="Quiz Name">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#homePageClicked" text="Home" />
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="446.0" prefWidth="833.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="40.0" layoutY="24.0" text="Question:" textFill="#6f3535">
+               <font>
+                  <Font name="Berlin Sans FB" size="32.0" />
+               </font>
+            </Label>
+            <TextField fx:id="questionField" layoutX="35.0" layoutY="68.0" prefHeight="39.0" prefWidth="764.0" promptText="Type your question here" />
+            <TextField fx:id="optionA" layoutX="137.0" layoutY="202.0" promptText="Option A" />
+            <TextField fx:id="optionC" layoutX="137.0" layoutY="256.0" promptText="Option B" />
+            <TextField fx:id="optionB" layoutX="517.0" layoutY="202.0" promptText="Option C" />
+            <TextField fx:id="optionD" layoutX="517.0" layoutY="256.0" promptText="Option D" />
+            <Label layoutX="94.0" layoutY="202.0" text="A." textFill="#4042b8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="95.0" layoutY="256.0" text="B." textFill="#4042b8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="457.0" layoutY="202.0" text="C." textFill="#4042b8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="256.0" text="D." textFill="#4042b8">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="addButton" layoutX="352.0" layoutY="394.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="61.0" prefWidth="129.0" style="-fx-background-color: #386dc2;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <TextField fx:id="correctAnswer" alignment="TOP_LEFT" layoutX="35.0" layoutY="114.0" prefHeight="39.0" prefWidth="313.0" promptText="Correct Answer" />
+            <Label fx:id="successText" alignment="CENTER" contentDisplay="CENTER" layoutX="296.0" layoutY="357.0" prefHeight="27.0" prefWidth="242.0">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

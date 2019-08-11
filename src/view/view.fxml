@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e1f0f5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.viewController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="takeQuizButton" layoutX="242.0" layoutY="146.0" mnemonicParsing="false" onAction="#takeQuizClicked" prefHeight="48.0" prefWidth="116.0" style="-fx-background-color: #752f3c;" text="Take Quiz" textFill="WHITE">
+               <effect>
+                  <GaussianBlur radius="0.0" />
+               </effect>
+            </Button>
+            <Button fx:id="createQuizButton" layoutX="240.0" layoutY="205.0" mnemonicParsing="false" onAction="#createQuizClicked" prefHeight="50.0" prefWidth="120.0" style="-fx-background-color: #cf6c25;" text="Create Quiz" textFill="WHITE" />
+            <Text layoutX="186.0" layoutY="66.0" stroke="#ffffffdf" strokeType="OUTSIDE" strokeWidth="0.0" text="Quiz Game" textAlignment="CENTER">
+               <font>
+                  <Font name="Bauhaus 93" size="47.0" />
+               </font>
+               <fill>
+                  <LinearGradient cycleMethod="REFLECT" endX="0.4532019704433498" endY="1.0" startX="0.4482758620689655" startY="0.4137931034482759">
+                     <stops>
+                        <Stop color="#043928" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

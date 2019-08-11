@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="751.0" style="-fx-background-color: #e1f0f5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TakeQuizController">
+   <top>
+      <AnchorPane prefHeight="90.0" prefWidth="751.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox layoutY="37.0" prefHeight="69.0" prefWidth="751.0">
+               <children>
+                  <AnchorPane prefHeight="144.0" prefWidth="751.0">
+                     <children>
+                        <Label fx:id="quizNameLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="7.0" prefHeight="55.0" prefWidth="512.0" text="Quiz Name" textFill="#bc4949">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="101.0" fitWidth="115.0" layoutY="-36.0">
+                           <image>
+                              <Image url="@000760-free-swirl-logo-design-online-logo-creator-03.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Label />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="questioNoLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="275.0" layoutY="14.0" text="Question No.1" textFill="#00608a" underline="true">
+               <font>
+                  <Font size="30.0" />
+               </font></Label>
+            <Label fx:id="questionLabel" alignment="CENTER" layoutX="23.0" layoutY="48.0" prefHeight="119.0" prefWidth="706.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font name="HoloLens MDL2 Assets" size="22.0" />
+               </font></Label>
+            <Button fx:id="optionAButton" layoutX="140.0" layoutY="167.0" mnemonicParsing="false" onAction="#handle" prefHeight="93.0" prefWidth="230.0" style="-fx-background-color: #2b6acf;" text="Button" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="optionBButton" layoutX="140.0" layoutY="267.0" mnemonicParsing="false" onAction="#handle" prefHeight="93.0" prefWidth="230.0" style="-fx-background-color: #c23c13;" text="Button" textFill="WHITE" AnchorPane.bottomAnchor="77.5">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="optionDButton" layoutX="383.0" layoutY="267.0" mnemonicParsing="false" onAction="#handle" prefHeight="93.0" prefWidth="230.0" style="-fx-background-color: #c21350;" text="Button" textFill="WHITE" AnchorPane.bottomAnchor="77.5">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="optionCButton" layoutX="383.0" layoutY="167.0" mnemonicParsing="false" onAction="#handle" prefHeight="93.0" prefWidth="230.0" style="-fx-background-color: #2fc484;" text="Button" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,5 @@
+................... is a instance of a program.~Process~Instance~Thread~Proecess~None of these
+The hardest thing in multi-threaded programming is~Synchronization~Context Switching~Synchronization~Starting Threads~Maintaining Speed
+_____ is the practice of ensuring that data is only accessible from one thread.~Thread confinement~Thread reusing~Thread reallocation~Thread realization~Thread confinement
+Implementing long-running tasks on the JavaFX Application thread may cause~Unresponsiveness~Slowness~Complexity~Unresponsiveness~Irregularity
+Will I get an A in the class?~Yes~Yes~Maybe~No~Depends on Professor
